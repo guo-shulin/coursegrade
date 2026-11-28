@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-import std;
-import cg.data;
-import cg.input;
+//
+// Created: hxd  2026-11-28 18:22:55
 
-int main()
-{
-    Grade g{};
-    read(g);
-    std::println("语文：{}，数学：{}，英语：{}", g.chinese, g.math, g.english);
-=======
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2026 FreeTech <xxx@qq.com>
+
 // Created: lixiaolu  2026-11-28 13:12:48
 
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -34,6 +29,5 @@ int main() {
     {
         std::print("Other error!\n");
     }
->>>>>>> origin/ours
     return 0;
 }

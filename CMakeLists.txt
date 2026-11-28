@@ -7,28 +7,7 @@ function(_add_executable target)
     add_executable(${target})
 endfunction()
 
-<<<<<<< HEAD
-project(hw-modules VERSION 0.1 LANGUAGES CXX)
 
-_add_executable(hw-modules)
-
-target_compile_features(hw-modules PRIVATE cxx_std_23)
-
-# C++ Modules support
-target_sources(hw-modules
-    PRIVATE
-        main.cpp
-
-
-    PRIVATE FILE_SET modules TYPE CXX_MODULES BASE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}
-        FILES
-        cg.data.cppm
-        cg.input.cppm
-
-
-
-
-=======
 project(module VERSION 0.1 LANGUAGES CXX)
 
 _add_executable(module)
@@ -44,19 +23,15 @@ target_sources(module
         FILES
         coursegrade.cppm
         input.cppm
->>>>>>> origin/ours
 
 )
 
 # Deployment settings
 include(GNUInstallDirs)
-<<<<<<< HEAD
-set(CMAKE_INSTALL_PREFIX "/opt/hw-modules" CACHE PATH "Install path prefix" FORCE)
-install(TARGETS hw-modules
-=======
+
 set(CMAKE_INSTALL_PREFIX "/opt/module" CACHE PATH "Install path prefix" FORCE)
 install(TARGETS module
->>>>>>> origin/ours
+
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
